@@ -24,15 +24,15 @@ export default function Home() {
  });
  console.log(result)
   }
-  const GetUserInfo = useQuery(api.user.GetUserInfo,{userEmail:user?.primaryEmailAddress?.emailAddress})
+
   return (
     <div>
     <div className="flex items-center justify-between p-5" >
       <Image src="/logo.svg" alt="logo" width={140} height={70} />
-    {checkUser ? (<Link href="/dashboard"> <Button>DashBoard</Button></Link>) : (<Link href="/sign-up"> <Button>Get Started</Button></Link>)}  
+    {user ? (<Link href="/dashboard"> <Button className="cursor-pointer">DashBoard</Button></Link>) : (<Link className="cursor-pointer" href="/sign-up"> <Button className="cursor-pointer">Get Started</Button></Link>)}  
       
       </div>
-      <div className=" text-black h-[80vh] flex flex-col items-center justify-center px-6 relative top-[-140px] ">
+      <div className=" text-black h-[80vh] flex flex-col items-center justify-center px-6  ">
        
       <div className="text-center max-w-4xl">
         <h1 className="text-5xl md:text-6xl font-bold leading-tight">
@@ -42,7 +42,7 @@ export default function Home() {
           Elevate your note-taking experience with our AI-powered PDF app. Seamlessly extract key insights, summaries, and annotations from any PDF with just a few clicks.
         </p>
         <div className="mt-6 space-x-4">
-        <Link href={checkUser ?"/dashboard":"/sign-up"}>  <button className="bg-black text-white px-6 py-3 rounded-full text-lg">Get started</button> </Link>
+        <Link href={user ?"/dashboard":"/sign-up"}>  <button className="bg-black text-white px-6 py-3 rounded-full text-lg">Get started</button> </Link>
           <button className="border border-black text-black px-6 py-3 rounded-full text-lg">Learn more</button>
         </div>
       </div>
