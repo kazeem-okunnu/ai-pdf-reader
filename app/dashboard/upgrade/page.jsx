@@ -38,7 +38,7 @@ export default function UpgradePlans() {
         </h2>
 
         <p className="mt-2 sm:mt-4">
-          <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 9.99$ </strong>
+          <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 0.30$ </strong>
 
           <span className="text-sm font-medium text-gray-700">/One Time</span>
         </p>
@@ -123,7 +123,7 @@ export default function UpgradePlans() {
           purchase_units:[
             {
               amount:{
-                value:9.99,
+                value:0.30,
                 currency_code:'USD'
               }
             }
