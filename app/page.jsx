@@ -39,7 +39,7 @@ export default function Home() {
           Simplify <span className="text-red-500">PDF</span> <span className="text-blue-500">Note</span>-Reading with <span className="text-black">AI-Powered</span>
         </h1>
         <p className="mt-6 text-gray-600 text-lg">
-          Elevate your note-taking experience with our AI-powered PDF app. Seamlessly extract key insights, summaries, and annotations from any PDF with just a few clicks.
+          Elevate your note-taking experience with our AI-powered PDF app. Seamlessly extract key insights, summaries, and annotations from any PDF with just a few clicks, Select the text and click the AI button to get a response.
         </p>
         <div className="mt-6 space-x-4">
         <Link href={user ?"/dashboard":"/sign-up"}>  <button className="bg-black text-white px-6 py-3 rounded-full text-lg">Get started</button> </Link>
