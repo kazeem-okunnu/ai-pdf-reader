@@ -10,7 +10,7 @@ A full-stack application that uses AI to summarize, extract, and analyze PDF con
 ## 🛠 Tech Stack
 - Next.js
 - GeminiAI API
-- Tailwind CSS
+- Shadcn 
 - Clerk Authentication
 - Convex Database
 
